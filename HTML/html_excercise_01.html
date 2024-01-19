@@ -6,15 +6,111 @@
         <meta name="author" content="Ongchangco, Kim L.">
     </head>
     <style>
-        a.navi{
+        body {
+            background-color: rgb(171, 228, 155);
+            background-image: image-set('paw.png');
+            background-size: 150px;
+            background-position: center;
+            padding: 10px;
+        }
+        header {
+            padding: 10px;
+            background-color: rgb(146, 216, 128);
+            box-shadow: 1px 1px 10px;
+        }
+
+        .link {
             gap: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            color: black;
+        }
+
+        .pic {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+        .infoSection{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background-color: rgba(171, 228, 155, 0.333);
+            padding: 25px;
+            margin: 0 0 20px 0;
+            box-shadow: 1px 1px 10px;
+        }
+        .inForm{
+            background-color: rgb(171, 228, 155);
+            padding: 25px;
+            margin: 5px;
+            box-shadow: 1px 1px 10px;
+        }
+        .pipTable{
+            background-color: rgb(171, 228, 155);
+            padding: 25px;
+            margin: 5px;
+            box-shadow: 1px 1px 10px;
+            width: 100%;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+            background-color: rgba(171, 228, 155);
+            box-shadow: 1px 1px 10px;
+            padding: 3px;
         }
     </style>
+
     <body>
-        <nav style="background-color: aqua;">
-            <a class="navi" href="#">Home</a>
-            <a class="navi" href="#">About Us</a>
-            <a class="navi" href="#">Contact</a>
-        </nav>
+        <header>
+            <nav style="width: 100%;">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#">About Us</a>
+                <a class="link" href="#">Contact</a>
+            </nav>
+        </header>
+        <figure>
+            <img class="pic" src="sloth.png" alt="Sloth" height="450px" width="700px">
+        </figure>
+        <section class="infoSection">
+            <div class="inForm">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required><br>
+                    <label for="pass">Password</label>
+                    <input type="text" id="pass" required><br>
+                    <p>Sex</p>
+                    <input type="radio" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female">
+                    <label for="female">Female</label><br>
+                    <input type="button" value="Submit">
+                </form>
+            </div>
+            <div style="width: 100%;">
+                <table class="pipTable">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>30</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <p>Developer: Kim L. Ongchangco</p>
+            <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a></p>
+        </footer>
     </body>
 </html>
