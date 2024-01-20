@@ -10,7 +10,7 @@
 <style>
     body {
         background-color: rgb(171, 228, 155);
-        background-image: image-set('paw.png');
+        background-image: image-set('res/paw.png');
         background-size: 150px;
         min-width: 1200px;
         background-position: center;
@@ -58,10 +58,10 @@
         text-shadow: 1px 1px 5px black;
     }
 
-    iframe {
+    video {
         margin: 25px;
-        width: 75%;
-        height: 75%;
+        width: 80%;
+        height: auto;
         min-width: 400px;
         border-radius: 5px;
         box-shadow: 1px 1px 10px;
@@ -77,14 +77,18 @@
         box-shadow: 1px 1px 10px;
     }
 
-    .inForm {
+    div.inCon {
         background-color: rgb(171, 228, 155);
         padding: 25px;
         margin: 5px;
         border-radius: 5px;
         box-shadow: 1px 1px 10px;
     }
-
+    form.signUpForm{
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        row-gap: 5px;
+    }
     table.pipTable {
         background-color: rgb(187, 226, 176);
         padding: 5px;
@@ -100,13 +104,17 @@
     td {
         text-align: center;
     }
-
-    input[type=button] {
+    input[type=text], input[type=password]{
+        border-radius: 5px;
+        box-shadow: 0 1px 3px black;
+    }
+    input.submit {
+        color: white;
+        background-color: rgba(128, 90, 40);
         padding: 5px 10px;
-        margin: 15px 0 0 0;
-        text-align: center;
-        box-shadow: 1px 1px 10px;
-        float: right;
+        box-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 1px black;        
+        border-radius: 5px;
     }
 
     footer {
@@ -130,39 +138,51 @@
     <section class="multiMid" style="display: grid; grid-template-columns: 60% 40%;">
         <figure>
             <div style="display: grid; grid-template-columns: 60% 40%;">
-                <img class="pic" src="sloth.png" alt="Sloth" height="300px" width="400px">
+                <img class="pic" src="res/sloth.png" alt="Sloth" height="300px" width="400px">
                 <div class="figCapCon">
                     <figcaption class="figCap">Hi! I'm Sonny the sloth!</figcaption>
                     <audio controls>
-                        <source src="hello.mp3" type="audio/mpeg">
+                        <source src="res/hello.mp3" type="audio/mpeg">
                     </audio>
                 </div>
             </div>
         </figure>
-        <div style="text-align: right;">
-            <iframe src="https://www.youtube.com/embed/DpV4k3Edr-I"></iframe>
+        <div style="text-align: right; margin: 10px;">
+            <video controls>
+                <source src="res/The Extreme Life Of A Sloth.mp4">
+            </video>
         </div>
     </section>
     <!-- Information Section-->
     <section class="infoSection">
-        <div class="inForm">
+        <div class="inCon">
             <!-- Sign-In Form-->
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" minlength="8" required><br>
-                <label for="pass">Password</label><br>
-                <input type="text" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
-                <p>Sex</p>
-                <input type="radio" id="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female">
-                <label for="female">Female</label><br>
-                <input type="checkbox" id="term" required>
-                <label for="term">I accept the <a href="#"> Terms and Conditions</a></label><br>
-                <input type="button" value="Submit">
+            <h1 style="color: rgba(128, 90, 40); text-shadow: 1px 1px 1px white; font-size: 2em;">Sign Up Now!</h1>
+            <form class="signUpForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" minlength="8" required style="grid-column-start: 2; grid-column-end: 4;">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required style="grid-column-start: 2; grid-column-end: 4;">
+                <div>Sex</div>
+                <div style="text-align: center;">
+                    <input type="radio" name="sex" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div style="text-align: center;">
+                    <input type="radio" name="sex" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div style="text-align: center; grid-column-start: 1; grid-column-end: 4; margin: 15px 0 0 0;">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I accept the <a href="#"> Terms and Conditions</a></label>
+                </div>
+                <div style="text-align: center; grid-column-start: 1; grid-column-end: 4; margin: 15px 0 0 0;">
+                    <input type="button" value="Submit" class="submit">
+                </div>
             </form>
         </div>
-        <div class="inForm">
+        <!-- User Table -->
+        <div class="inCon">
             <table class="pipTable">
                 <th>Name</th>
                 <th>Age</th>
