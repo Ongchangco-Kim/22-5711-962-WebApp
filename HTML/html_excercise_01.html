@@ -5,135 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ongchangco, Kim L.">
+    <title>HTML_Excercise</title>
+    <!-- Skin -->
+    <style>
+        body {
+            background-color: rgb(171, 228, 155);
+            background-image: url('res/paw.png');
+            background-size: 150px;
+            background-position: center;
+            padding: 10px;
+        }
+    
+        header {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 10px;
+            background-color: rgb(146, 216, 128);
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px;
+        }
+    
+        .link {
+            gap: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            color: rgba(110, 74, 26);
+            text-shadow: 1px 1px 1px white;
+            font-weight: bold;
+        }
+    
+        img.pic {
+            display: block;
+            width: 50%;
+            min-width: 400px;
+        }
+    
+        div.figCapCon {
+            display: block;
+            background-color: rgba(110, 74, 26, 0.75);
+            margin: auto;
+            height: auto;
+            min-width: 300px;
+            padding: 5px;
+            box-shadow: 1px 1px 10px;
+            text-shadow: 1px 1px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    
+        figcaption.figCap {
+            color: white;
+            font-size: 2.5em;
+            min-width: 300px;
+            text-shadow: 1px 1px 5px black;
+        }
+    
+        video {
+            margin: 25px;
+            width: 80%;
+            height: auto;
+            min-width: 400px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px;
+        }
+    
+        .infoSection {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background-color: rgba(171, 228, 155, 0.333);
+            padding: 25px;
+            margin: 0 0 20px 0;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px;
+        }
+    
+        div.inCon {
+            background-color: rgb(146, 216, 128);
+            padding: 25px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px;
+        }
+        form.signUpForm{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            row-gap: 5px;
+        }
+        table.pipTable {
+            background-color: rgb(235, 196, 145);
+            padding: 5px;
+            margin: 5px;
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 1px 1px 5px black;
+            border-radius: 5px;
+            table-layout: fixed;
+        }
+    
+        td {
+            text-align: center;
+        }
+        input[type=text], input[type=password]{
+            background-color: rgb(235, 196, 145);
+            border-radius: 5px;
+            box-shadow: 0 1px 3px black;
+        }
+        input.submit {
+            color: white;
+            background-color: rgba(128, 90, 40);
+            padding: 5px 10px;
+            box-shadow: 1px 1px 5px black;
+            text-shadow: 1px 1px 1px black;        
+            border-radius: 5px;
+        }
+    
+        footer {
+            padding: 3px;
+            background-color: rgba(146, 216, 128);
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-<!-- Skin -->
-<style>
-    body {
-        background-color: rgb(171, 228, 155);
-        background-image: image-set('res/paw.png');
-        background-size: 150px;
-        background-position: center;
-        padding: 10px;
-    }
 
-    header {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        padding: 10px;
-        background-color: rgb(146, 216, 128);
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-    }
-
-    .link {
-        gap: 10px;
-        padding: 10px;
-        font-size: 1.5em;
-        color: rgba(110, 74, 26);
-        text-shadow: 1px 1px 1px white;
-        font-weight: bold;
-    }
-
-    img.pic {
-        display: block;
-        width: 50%;
-        min-width: 400px;
-    }
-
-    div.figCapCon {
-        display: block;
-        background-color: rgba(110, 74, 26, 0.75);
-        margin: auto;
-        height: auto;
-        min-width: 300px;
-        padding: 5px;
-        box-shadow: 1px 1px 10px;
-        text-shadow: 1px 1px;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    figcaption.figCap {
-        color: white;
-        font-size: 2.5em;
-        min-width: 300px;
-        text-shadow: 1px 1px 5px black;
-    }
-
-    video {
-        margin: 25px;
-        width: 80%;
-        height: auto;
-        min-width: 400px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-    }
-
-    .infoSection {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        background-color: rgba(171, 228, 155, 0.333);
-        padding: 25px;
-        margin: 0 0 20px 0;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-    }
-
-    div.inCon {
-        background-color: rgb(146, 216, 128);
-        padding: 25px;
-        margin: 5px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-    }
-    form.signUpForm{
-        display: grid;
-        grid-template-columns: 40% 30% 30%;
-        row-gap: 5px;
-    }
-    table.pipTable {
-        background-color: rgb(235, 196, 145);
-        padding: 5px;
-        margin: 5px;
-        width: 100%;
-        height: auto;
-        border: 1px solid black;
-        text-align: center;
-        box-shadow: 1px 1px 5px black;
-        border-radius: 5px;
-        table-layout: fixed;
-    }
-
-    td {
-        text-align: center;
-    }
-    input[type=text], input[type=password]{
-        background-color: rgb(235, 196, 145);
-        border-radius: 5px;
-        box-shadow: 0 1px 3px black;
-    }
-    input.submit {
-        color: white;
-        background-color: rgba(128, 90, 40);
-        padding: 5px 10px;
-        box-shadow: 1px 1px 5px black;
-        text-shadow: 1px 1px 1px black;        
-        border-radius: 5px;
-    }
-
-    footer {
-        padding: 3px;
-        background-color: rgba(146, 216, 128);
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-        text-align: center;
-    }
-</style>
 <!-- Skeleton -->
 <body>
     <header>
-        <div style="display: flex; flex-flow: row no-wrap;">
-            <img src="res/slothlogo.png" height="50px" width="50px" style="margin: auto 0;">
+        <div style="display: flex;">
+            <img src="res/slothlogo.png" height="50" width="50" style="margin: auto 0;" alt="slothlogo_image">
             <h1 style="color: rgba(110, 74, 26); text-shadow: 1px 1px 1px white; margin: auto auto auto 10px; font-weight: bolder;">Sloth Society</h1>
         </div>
         <nav style="text-align: right; margin: auto 0 auto auto;">
@@ -143,24 +145,24 @@
         </nav>
     </header>
     <!-- Multi-Media Section -->
-    <section class="multiMid" style="display: grid; grid-template-columns: 60% 40%;">
+    <div class="multiMid" style="display: grid; grid-template-columns: 60% 40%;">
         <figure>
             <div style="display: grid; grid-template-columns: 60% 40%;">
-                <img class="pic" src="res/sloth.png" alt="Sloth" height="300px" width="400px" draggable="false">
+                <img class="pic" src="res/sloth.png" alt="Sloth" height="300" width="400" draggable="false">
                 <div class="figCapCon">
-                    <figcaption class="figCap">Hi! I'm Sonny the sloth!</figcaption>
                     <audio controls>
                         <source src="res/hello.mp3" type="audio/mpeg">
                     </audio>
                 </div>
             </div>
+            <figcaption class="figCap">Hi! I'm Sonny the sloth!</figcaption>
         </figure>
         <div style="text-align: right; margin: 10px;">
             <video controls>
-                <source src="res/The Extreme Life Of A Sloth.mp4">
+                <source src="res/extremesloth.mp4" type="video/mp4">
             </video>
         </div>
-    </section>
+    </div>
     <!-- Information Section-->
     <section class="infoSection">
         <div class="inCon">
@@ -193,9 +195,11 @@
         <div class="inCon">
             <h3 style="color: rgba(110, 74, 26); text-shadow: 1px 1px 1px white; font-size: 2em;">Sloth Society Members</h3>
             <table class="pipTable">
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
                 <tr>
                     <td>John</td>
                     <td>25</td>
@@ -212,7 +216,7 @@
     <!-- Footer -->
     <footer>
         <p>Developer: Kim L. Ongchangco</p>
-        <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a></p>
+        <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a>
     </footer>
 </body>
 
