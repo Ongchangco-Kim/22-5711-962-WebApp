@@ -31,60 +31,73 @@
         <div class="contents">
             <!--Home-->
             <section id="home" class="home">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et atque velit ullam dolorem architecto aliquam voluptate facere iure eveniet tenetur reiciendis quas eos incidunt ut perspiciatis, nemo natus excepturi.
-                Neque ut voluptatibus, repellendus quia est facere optio! Laborum assumenda officiis, blanditiis laboriosam quae commodi mollitia temporibus aspernatur fugit odio quas soluta enim provident explicabo, veritatis minima rerum adipisci quia.
+                <h2>Home</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et atque velit ullam dolorem architecto
+                aliquam voluptate facere iure eveniet tenetur reiciendis quas eos incidunt ut perspiciatis, nemo natus
+                excepturi.
+                Neque ut voluptatibus, repellendus quia est facere optio! Laborum assumenda officiis, blanditiis
+                laboriosam quae commodi mollitia temporibus aspernatur fugit odio quas soluta enim provident explicabo,
+                veritatis minima rerum adipisci quia.
             </section>
-            <hr>
             <!--Log In Section-->
             <section id="logIn" class="logIn">
-                <div class="contentBlk">
-                    <form action="">
+                <h2>Log In</h2>
+                <div class="conForm">
+                    <form id="logForm" class="logForm">
                         <label for="email">Email</label>
-                        <input type="text" id="email" required>
+                        <input type="email" id="email" placeholder="sloth420@gmail.com" required>
                         <label for="password">Password</label>
-                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                        <input type="button" id="bLog" name="bLog" value="log in">
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="xxxxxxxx" required>
+                        <input type="button" id="bLog" name="bLog" value="Log In">
                     </form>
                 </div>
             </section>
-            <hr>
             <!--Sign Up Section-->
             <section id="signUp" class="signUp">
-                <div class="contentBlk">
-                    <form action="">
-                        <label for="name">Email</label>
+                <h2>Sign Up</h2>
+                <div class="conForm">
+                    <form id="signForm" class="signForm">
+                        <label for="name">Name</label>
                         <input type="text" id="name" name="name" minlength="8" required>
                         <label for="dob">Date of Birth</label>
-                        <input type="date" name="dob" required>
+                        <input type="date" id="dob" name="dob" required>
+                        <label>Sex</label>
+                        <div id="radGroup">
+                            <div>
+                                <input type="radio" id="male" name="sex" value="Male">
+                                <label for="male"> Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="sex" value="Male">
+                                <label for="male"> Female</label>
+                            </div>
+                        </div>
                         <label for="cNum">Contact Number</label>
-                        <input type="number" id="cNum" name="cNum" required>
-                        <label for="pass">Password</label>
+                        <input type="text" id="cNum" name="cNum" placeholder="########" required>
+                        <label for="pass">Create Password</label>
                         <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            required>
-                        <label for="conPass">Password</label>
-                        <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            required>
+                            placeholder="xxxxxxxx" required>
+                        <label for="conPass">Confirm Password</label>
+                        <input type="password" id="conPass" name="conPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            placeholder="xxxxxxxx" required>
                         <input type="button" id="sub" name="bSub" value="Submit">
                     </form>
                 </div>
             </section>
-            <hr>
             <!--Google Map-->
             <section id="loc" class="loc">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1006492.0218126753!2d-84.
-        13407172187499!3d9.799074100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-        1!3m3!1m2!1s0x8fa6ff8e87552023%3A0x6520ebccd419922d!2sSloth%20Sanctuary%20of%20Costa%20Rica!5e0!3m2!1sen!2sph!4v1706859892617!5m2!1sen!2sph"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Featured Site</h2>
+                <iframe class="featMap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1006492.0218126753!2d-84.13407172187499!3d9.799074100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6ff8e87552023%3A0x6520ebccd419922d!2sSloth%20Sanctuary%20of%20Costa%20Rica!5e0!3m2!1sen!2sph!4v1706859892617!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-            <hr>
-            <!--Footer-->
-            <footer id="about" class="about">
-                <p>You can email us at: <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a></p>
-            </footer>
         </div>
     </div>
+    <!--Footer-->
+    <footer id="about" class="about">
+        <h2>About</h2>
+        <p>You can email us at: <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a></p>
+    </footer>
 </body>
 
 </html>
