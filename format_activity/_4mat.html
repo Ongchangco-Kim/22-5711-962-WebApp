@@ -33,34 +33,50 @@
     </p>
     <hr>
     <section style="display: grid; grid-template-columns: 25% 50% 25%;">
-        <img src="res/Sonny.png" alt="Sonny_the_Sloth_image" style="display: block; margin: auto; height: 200px; width: 200px; grid-column-start: 2;">
-        <blockquote id="quote" style="display: block; text-align: center; grid-column-start: 2;">“Every move a sloth makes is with purpose, which
+        <img src="res/Sonny.png" alt="Sonny_the_Sloth_image"
+            style="display: block; margin: auto; height: 200px; width: 200px; grid-column-start: 2;">
+        <blockquote id="quote" style="display: block; text-align: center; grid-column-start: 2;">“Every move a sloth
+            makes is with <b>purpose</b>, which
             is more than most of us can say about 90% of the time.”</blockquote>
-        <label for="quote" style="display: block; text-align: center; grid-column-start: 2;">- <q>Sonny</q> the Sloth</label>
+        <label for="quote" style="display: block; text-align: center; grid-column-start: 2;">- Sonny the Sloth</label>
         <div style="grid-column-start: 2; margin-top: 50px;">
             <ins>Sonny's Tips for Beginner Coders</ins>
             <p>
-                First, <strong>relax</strong> yourself ... <br>
+                First, <strong><q>relax</q></strong> yourself ... <br>
                 <progress></progress> <br>
                 <samp>Process Complete</samp><br><br>
                 Done? <br>
-                Your <mark>goal</mark>  is to use not 50%<meter value="5" min="0" max="10">5 out of 10</meter>, 
+                Your <dfn>goal</dfn> is to use not 50%<meter value="5" min="0" max="10">5 out of 10</meter>,
                 but 100%<meter value="10" min="0" max="10">10 out of 10</meter> maximum effort! <br>
                 Also, the secret to a good coder is <kbd>Ctrl</kbd>+<kbd>C</kbd> and <kbd>Ctrl</kbd>+<kbd>V</kbd>! <br>
-                Never forget that! <br>
-                You can also type forward ... <br>
-                <bdo dir="rtl"> <s> Or backwards ...</s></bdo><br>
-                <pre><bdi>But why would you?</bdi></pre>
-                <ruby>
-                    漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
-                </ruby>
+                Additionally, try to avoid dumping all tags in one place, like this: <br>
+                <bdo dir="rtl"> <s><mark><q>Refrain from <sub>doing</sub> <sup>this!</sup></q></mark></s></bdo><br>
+            <pre><bdi>Do not forget these!</bdi></pre>
+            <ruby>
+                漢 <rp>(</rp>
+                <rt>ㄏㄢˋ</rt>
+                <rp>)</rp>  
+            </ruby>
             </p>
+            <button onclick="showContent()">Prepared by:</button>
+
+            <template>
+                <div style="text-align: center;">
+                    <h3 style="margin: 0;">Kim Ongchangco</h3>
+                    <address>Baguio City, Philippines</address>
+                    <img src="res/slothSmirk.jpg" width="250" height="200" style="display: block; margin: auto;">
+                </div>
+                
+            </template>
         </div>
-    </section>
-    <footer style="text-align: center; margin-top: 50px;">
-        <h3 style="margin: 0;">Written by: Kim Ongchangco</h3>
-        <address>Baguio City, Philippines</address>
-    </footer>
+    </section> 
+    <script>
+        function showContent() {
+            let temp = document.getElementsByTagName("template")[0];
+            let clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
 </body>
 
 </html>
