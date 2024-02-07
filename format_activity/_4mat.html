@@ -8,68 +8,48 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Life of a Sloth</h1>
-    <img src="res/slothProper.jpg" alt="sloth_image" style="display: block; margin: auto;">
-    <cite style=" display: block; text-align: center;">A Three-Toed Sloth</cite>
-    <section style="text-align: justify;">
-        <dfn>Sloths</dfn> are tropical mammals that live in <b>Central and South America.</b>
-        They use their long claws to hang onto branches while they feast on the leaves that other animals can't reach.
-        The sloth's long claws — 8 to 10 <abbr title="centimeters">cm</abbr> — <i> make walking on the ground
-            difficult,</i>so they spend most of their time in the tall trees they call home.
-    </section>
-
-    <h2>Biology</h2>
-    <p>
-        There are <em>six species</em> of sloth, and they come in two varieties: two-toed and three-toed.
-        Three-toed sloths are about the size of a medium-sized dog at around 23 to 27 inches (58 to 68 cm) and 17.5 to
-        18.75 lbs.
-        (about 8 kilograms). The two-toed sloths are slightly bigger than the three-toed sloths, though they share many
-        of the same features.
-
-        Thousands of years ago, sloths were much larger. Ancient sloths could grow to be as large as an elephant.
-        They roamed North America and became extinct around 10,000 years ago.
-        Sloths have an average life span of 20 to 30 years in the wild, but captive sloths tend to live a bit longer.
-        <del>In 2017, a captive sloth at the Adelaide Zoo in Australia died at age 43.</del>
-    </p>
-    <hr>
+    <h1 style="text-align: center;">Sloth Society</h1>
     <section style="display: grid; grid-template-columns: 25% 50% 25%;">
         <img src="res/Sonny.png" alt="Sonny_the_Sloth_image"
             style="display: block; margin: auto; height: 200px; width: 200px; grid-column-start: 2;">
         <blockquote id="quote" style="display: block; text-align: center; grid-column-start: 2;">“Every move a sloth
-            makes is with <b>purpose</b>, which
-            is more than most of us can say about 90% of the time.”</blockquote>
-        <label for="quote" style="display: block; text-align: center; grid-column-start: 2;">- Sonny the Sloth</label>
+            makes is with <b>purpose</b>, which is more than most of us can say about 90% of the time.”</blockquote>
+        <label for="quote" style="display: block; text-align: center; grid-column-start: 2;">- <abbr
+                title="Mister">Mr.</abbr> Sonny the Sloth</label>
         <div style="grid-column-start: 2; margin-top: 50px;">
             <ins>Sonny's Tips for Beginner Coders</ins>
             <p>
-                First, <strong><q>relax</q></strong> yourself ... <br>
+                Before anything else, try to wake up at <time>6:00</time>am, always! <br>
+                If you do that, you can then try to <strong><q>relax</q></strong> yourself ... <br>
                 <progress></progress> <br>
                 <samp>Process Complete</samp><br><br>
                 Done? <br>
-                Your <dfn>goal</dfn> is to use not 50%<meter value="5" min="0" max="10">5 out of 10</meter>,
+                First, your <dfn>goal</dfn> is to use not 50%<meter value="5" min="0" max="10">5 out of 10</meter>, <wbr>
                 but 100%<meter value="10" min="0" max="10">10 out of 10</meter> maximum effort! <br>
-                Also, the secret to a good coder is <kbd>Ctrl</kbd>+<kbd>C</kbd> and <kbd>Ctrl</kbd>+<kbd>V</kbd>! <br>
-                Additionally, try to avoid dumping all tags in one place, like this: <br>
-                <bdo dir="rtl"> <s><mark><q>Refrain from <sub>doing</sub> <sup>this!</sup></q></mark></s></bdo><br>
+                You do not have to understand algebra, <var>x</var> and <var>y</var>, or any higher Math! <br>
+                The only secret to a good coder is <kbd>Ctrl</kbd>+<kbd>C</kbd> and <kbd>Ctrl</kbd>+<kbd>V</kbd>! <br>
+                Lastly, <b>NEVER</b>, ever try to dump all tags in one place, like this: <br>
+                <bdo dir="rtl"><s><mark><q><u><del>Refrain from
+                                        <sub>doing</sub><sup>this!</sup></del></u></q></mark></s></bdo><br>
             <pre><bdi>Do not forget these!</bdi></pre>
+            With all that in mind, I bid you farewell in my language: <br>
             <ruby>
-                漢 <rp>(</rp>
-                <rt>ㄏㄢˋ</rt>
-                <rp>)</rp>  
+                <rp>Sayonara, or Goodbye</rp>
+                <rt>さようなら</rt>
             </ruby>
             </p>
-            <button onclick="showContent()">Prepared by:</button>
+            <button onclick="showContent()" style="display: block; margin: 50px auto;">Prepared by:</button>
 
             <template>
                 <div style="text-align: center;">
-                    <h3 style="margin: 0;">Kim Ongchangco</h3>
+                    <h3 style="margin: 2px;">Kim Ongchangco</h3>
                     <address>Baguio City, Philippines</address>
                     <img src="res/slothSmirk.jpg" width="250" height="200" style="display: block; margin: auto;">
                 </div>
-                
+
             </template>
         </div>
-    </section> 
+    </section>
     <script>
         function showContent() {
             let temp = document.getElementsByTagName("template")[0];
