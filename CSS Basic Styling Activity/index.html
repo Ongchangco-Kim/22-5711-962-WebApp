@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Excercise04</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="topLock">
+        <header>
+            <div class="headContent">
+                <img class="logo" src="img/slothlogo.png" alt="slothlogo_image">
+                <h1>Sloth Society</h1>
+                <img class="logo" src="img/slothlogo.png" alt="slothlogo_image">
+            </div>
+        </header>
+        <div class="navBar">
+            <a href="#home">Home</a>
+            <a href="#logIn">Log In</a>
+            <a href="#signUp">Sign Up</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div class="cenCon">
+        <div class="contents">
+            <!--Home-->
+            <section id="home" class="home">
+                <h2>Home</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et atque velit ullam dolorem architecto
+                aliquam voluptate facere iure eveniet tenetur reiciendis quas eos incidunt ut perspiciatis, nemo natus
+                excepturi.
+                Neque ut voluptatibus, repellendus quia est facere optio! Laborum assumenda officiis, blanditiis
+                laboriosam quae commodi mollitia temporibus aspernatur fugit odio quas soluta enim provident explicabo,
+                veritatis minima rerum adipisci quia.
+            </section>
+            <!--Log In Section-->
+            <section id="logIn" class="logIn">
+                <h2>Log In</h2>
+                <div class="conForm">
+                    <form id="logForm" class="logForm">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="sloth420@gmail.com" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="xxxxxxxx" required>
+                        <input type="button" id="bLog" name="bLog" value="Log In">
+                    </form>
+                </div>
+            </section>
+            <!--Sign Up Section-->
+            <section id="signUp" class="signUp">
+                <h2>Sign Up</h2>
+                <div class="conForm">
+                    <form id="signForm" class="signForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" minlength="8" required>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <label>Sex</label>
+                        <div id="radGroup">
+                            <div>
+                                <input type="radio" id="male" name="sex" value="Male">
+                                <label for="male"> Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="sex" value="Male">
+                                <label for="male"> Female</label>
+                            </div>
+                        </div>
+                        <label for="cNum">Contact Number</label>
+                        <input type="text" id="cNum" name="cNum" placeholder="########" required>
+                        <label for="pass">Create Password</label>
+                        <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            placeholder="xxxxxxxx" required>
+                        <label for="conPass">Confirm Password</label>
+                        <input type="password" id="conPass" name="conPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            placeholder="xxxxxxxx" required>
+                        <input type="button" id="sub" name="bSub" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer id="about" class="about">
+        <h2>About</h2>
+        <p>You can email us at: <a href="mailto:kongchangcok@gmail.com">kongchangcok@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
