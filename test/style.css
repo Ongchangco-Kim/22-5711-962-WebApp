@@ -1,0 +1,22 @@
+
+.board{
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 90px;
+}
+
+.tile-white{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+.tile-green{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: green;
+}
+
